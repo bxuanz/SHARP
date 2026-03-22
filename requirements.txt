@@ -1,0 +1,6 @@
+torch
+torchvision
+diffusers
+transformers
+accelerate
+sentencepiece

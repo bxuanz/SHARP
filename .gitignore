@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.DS_Store
+
+outputs/
+rs_outputs/
+rs_outputs_eval*/
+
+checkpoints/*
+!checkpoints/.gitkeep
