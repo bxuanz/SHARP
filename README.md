@@ -1,6 +1,12 @@
-# SHARP
+<div align="center">
+  <h1>SHARP</h1>
+  <p><strong>Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis</strong></p>
+  <p><em>Training-free large-scale remote sensing text-to-image synthesis with an RS-adapted FLUX prior and dynamic positional adaptation.</em></p>
+</div>
 
-`SHARP` is a remote-sensing image generation codebase built on top of FLUX. This public release currently includes code only.
+SHARP is a training-free resolution promotion framework for remote sensing text-to-image synthesis. Built on top of an RS-adapted FLUX prior, it applies stronger positional extrapolation during early layout formation and progressively relaxes it during late detail recovery, enabling robust large-scale generation while preserving the dense high-frequency structures that are critical in remote sensing imagery.
+
+---
 
 ## ◆ TODO
 
@@ -8,9 +14,16 @@
 - ○ Fine-tuned RS-FLUX weights
 - ○ Training data
 
+## ◆ Highlights
+
+- **Training-free resolution promotion** for remote sensing text-to-image synthesis
+- **Spectrum-aware dynamic positional adaptation** aligned with diffusion denoising
+- **Resolution-agnostic generation** across both square and rectangular high resolutions
+- **FLUX-based implementation** built around an RS-specialized generative prior
+
 ## ◆ Method Overview
 
-The figure below is a placeholder for the method / structure diagram that will be added later.
+The figure below summarizes the overall SHARP framework and its key design intuition.
 
 ![SHARP Structure Placeholder](docs/structure.png)
 
@@ -60,15 +73,6 @@ pip install -r requirements.txt
 
 These entry points were sanity-checked with `--help`.
 
-## ◆ Validation
-
-You can validate the installation and CLI wiring without model weights:
-
-```bash
-bash run_sharp.sh --help
-python run_sharp.py --help
-python run_sharp_multi_gpu.py --help
-```
 
 ## ◆ Checkpoints
 
@@ -131,7 +135,3 @@ python run_sharp_multi_gpu.py \
 - The main generation script uses `--save_prefix` for output naming.
 - If `--ckpt_path` is omitted, SHARP auto-discovers a checkpoint only when exactly one checkpoint directory exists under `checkpoints/`.
 - For FLUX latent packing, image sizes are ideally divisible by 16. If not, the effective generated size may be rounded down internally.
-
-## ◆ Attribution
-
-This repository retains the upstream license in `LICENSE`.
