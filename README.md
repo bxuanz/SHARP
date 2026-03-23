@@ -1,17 +1,19 @@
 <div align="center">
-  <h1>SHARP</h1>
+  <img src="assets/logo.png" alt="SHARP logo" width="220"/>
   <p><strong>Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis</strong></p>
   <p><em>Training-free large-scale remote sensing text-to-image synthesis with an RS-adapted FLUX prior and dynamic positional adaptation.</em></p>
 </div>
 
 SHARP is a training-free resolution promotion framework for remote sensing text-to-image synthesis. Built on top of an RS-adapted FLUX prior, it applies stronger positional extrapolation during early layout formation and progressively relaxes it during late detail recovery, enabling robust large-scale generation while preserving the dense high-frequency structures that are critical in remote sensing imagery.
 
+The fine-tuned RS-FLUX checkpoint is available at: [BxuanZ/FLUX-RS](https://huggingface.co/BxuanZ/FLUX-RS)
+
 ---
 
 ## ◆ TODO
 
 - ✓ SHARP code
-- ○ Fine-tuned RS-FLUX weights
+- ✓ Fine-tuned RS-FLUX weights
 - ○ Training data
 
 ## ◆ Highlights
@@ -31,6 +33,8 @@ The figure below summarizes the overall SHARP framework and its key design intui
 
 ```text
 SHARP/
+├── assets/
+│   └── logo.png
 ├── flux/
 │   ├── pipeline_flux.py
 │   └── transformer_flux.py
@@ -52,8 +56,10 @@ SHARP/
 - `run_sharp.py` → official single-GPU SHARP generation entry point
 - `run_sharp_multi_gpu.py` → official multi-GPU SHARP batch launcher
 - `run_sharp.sh` → lightweight shell entry point for SHARP inference
+- `assets/logo.png` → SHARP logo used in the project page
 - `flux/pipeline_flux.py`, `flux/transformer_flux.py` → SHARP implementation used by the remote-sensing scripts
 - `rs_t2i_eval_prompts_100.txt` → example prompt list for batch evaluation
+- `FLUX-RS` weights → https://huggingface.co/BxuanZ/FLUX-RS
 
 ## ◆ Installation
 
@@ -76,7 +82,9 @@ These entry points were sanity-checked with `--help`.
 
 ## ◆ Checkpoints
 
-This release does not include model weights.
+The fine-tuned RS-FLUX weights are publicly available on Hugging Face:
+
+- `FLUX-RS` → https://huggingface.co/BxuanZ/FLUX-RS
 
 By default, the scripts look under:
 
@@ -86,7 +94,7 @@ checkpoints/
 
 You can use either of these workflows:
 
-- Put exactly one checkpoint directory under `checkpoints/`, then omit `--ckpt_path`
+- Download `FLUX-RS` into `checkpoints/`, then omit `--ckpt_path`
 - Pass the checkpoint directory explicitly with `--ckpt_path /path/to/your_checkpoint_dir`
 
 A valid checkpoint path should be the model directory itself, for example:
