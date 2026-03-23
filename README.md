@@ -2,7 +2,6 @@
 
 <img src="assets/logo.png" alt="SHARP logo" width="220"/>
 
-# **SHARP**
 
 ### *Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis*
 
