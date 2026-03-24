@@ -11,10 +11,11 @@
 
 <p>
 <a href="https://huggingface.co/BxuanZ/FLUX-RS"><img src="https://img.shields.io/badge/Weights-FLUX--RS-gold?logo=huggingface&logoColor=white" alt="Weights"></a>
+<a href="https://arxiv.org/pdf/2603.21783"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
 <img src="https://img.shields.io/badge/Task-Remote%20Sensing%20T2I-1f8b4c" alt="Task">
 <img src="https://img.shields.io/badge/Mode-Training--Free-ff7f50" alt="Mode">
-<img src="https://img.shields.io/badge/Backend-FLUX-0f766e" alt="Backend">
-<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python">
+<a href="https://github.com/black-forest-labs/flux"><img src="https://img.shields.io/badge/Backend-FLUX-0f766e" alt="Backend"></a>
+<a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python"></a>
 </p>
 
 </div>
