@@ -192,6 +192,22 @@ These entry points were sanity-checked with `--help`.
 
 SHARP is built on an RS-adapted FLUX prior and includes custom remote sensing generation utilities for practical large-resolution synthesis.
 
+## 📚 Citation
+
+If you find SHARP useful in your research, please cite our paper:
+
+```bibtex
+@misc{zhao2026sharpspectrumawarehighlydynamicadaptation,
+      title={SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis},
+      author={Bingxuan Zhao and Qing Zhou and Chuang Yang and Qi Wang},
+      year={2026},
+      eprint={2603.21783},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.21783},
+}
+```
+
 ## 📌 License
 
 This project is released under the [MIT License](LICENSE).
