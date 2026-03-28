@@ -618,8 +618,8 @@ def get_1d_rotary_pos_embed(
         kappa = compute_rs_kappa_rds(current_timestep, alpha=4.0)
         if dype:
             
-            beta_0 = beta_0 ** (2.0 * kappa)
-            beta_1 = beta_1 ** (2.0 * kappa)
+            beta_0 = beta_0 ** kappa
+            beta_1 = beta_1 ** kappa
 
         low, high = find_correction_range(beta_0, beta_1, dim, theta, ori_max_pe_len)
         low = max(0, low)
@@ -633,8 +633,8 @@ def get_1d_rotary_pos_embed(
         #     gamma_1 = gamma_1 ** (2.0 * (current_timestep ** 2.0))
         if dype:
             # 复用刚刚算好的 kappa 即可
-            gamma_0 = gamma_0 ** (2.0 * kappa)
-            gamma_1 = gamma_1 ** (2.0 * kappa)
+            gamma_0 = gamma_0 * kappa
+            gamma_1 = gamma_1 * kappa
         low, high = find_correction_range(gamma_0, gamma_1, dim, theta, ori_max_pe_len)
         low = max(0, low)
         high = min(dim // 2, high)

@@ -50,8 +50,8 @@ def parse_args():
         default=None,
         help="Only process the first N prompts after applying --prompt_offset",
     )
-    parser.add_argument("--height", type=int, default=1024, help="Image height in pixels")
-    parser.add_argument("--width", type=int, default=1024, help="Image width in pixels")
+    parser.add_argument("--height", type=int, default=1536, help="Image height in pixels")
+    parser.add_argument("--width", type=int, default=1536, help="Image width in pixels")
     parser.add_argument("--steps", type=int, default=28, help="Number of inference steps")
     parser.add_argument("--seed", type=int, default=0, help="Base random seed")
     parser.add_argument(
