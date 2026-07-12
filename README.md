@@ -11,7 +11,8 @@
 
 <p>
 <a href="https://huggingface.co/BxuanZ/FLUX-RS"><img src="https://img.shields.io/badge/Weights-FLUX--RS-gold?logo=huggingface&logoColor=white" alt="Weights"></a>
-<a href="https://arxiv.org/pdf/2603.21783"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
+<a href="https://openreview.net/forum?id=6fiQ37499f"><img src="https://img.shields.io/badge/Paper-ACM%20MM%202026-b31b1b" alt="Paper"></a>
+<a href="https://arxiv.org/pdf/2603.21783"><img src="https://img.shields.io/badge/arXiv-2603.21783-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 <img src="https://img.shields.io/badge/Task-Remote%20Sensing%20T2I-1f8b4c" alt="Task">
 <img src="https://img.shields.io/badge/Mode-Training--Free-ff7f50" alt="Mode">
 <a href="https://github.com/black-forest-labs/flux"><img src="https://img.shields.io/badge/Backend-FLUX-0f766e" alt="Backend"></a>
@@ -44,6 +45,7 @@ The figure below gives a quick look at the SHARP framework and its design intuit
 
 ## 📢 Current Status
 
+- ✅ Accepted by the 34th ACM International Conference on Multimedia
 - ✅ SHARP inference code
 - ✅ Fine-tuned RS-FLUX weights
 - ❌ Training data
@@ -195,17 +197,16 @@ SHARP is built on an RS-adapted FLUX prior and includes custom remote sensing ge
 
 ## 📚 Citation
 
-If you find SHARP useful in your research, please cite our paper:
+SHARP has been accepted by the 34th ACM International Conference on Multimedia. If you find SHARP useful in your research, please cite our paper:
 
 ```bibtex
-@misc{zhao2026sharpspectrumawarehighlydynamicadaptation,
-      title={SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis},
-      author={Bingxuan Zhao and Qing Zhou and Chuang Yang and Qi Wang},
-      year={2026},
-      eprint={2603.21783},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.21783},
+@inproceedings{
+anonymous2026sharp,
+title={{SHARP}: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis},
+author={Anonymous},
+booktitle={34th ACM International Conference on Multimedia},
+year={2026},
+url={https://openreview.net/forum?id=6fiQ37499f}
 }
 ```
 
