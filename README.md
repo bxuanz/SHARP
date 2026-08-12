@@ -200,13 +200,14 @@ SHARP is built on an RS-adapted FLUX prior and includes custom remote sensing ge
 SHARP has been accepted by the 34th ACM International Conference on Multimedia. If you find SHARP useful in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{
-anonymous2026sharp,
-title={{SHARP}: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis},
-author={Anonymous},
-booktitle={34th ACM International Conference on Multimedia},
-year={2026},
-url={https://openreview.net/forum?id=6fiQ37499f}
+@misc{zhao2026sharpspectrumawarehighlydynamicadaptation,
+      title={SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis}, 
+      author={Bingxuan Zhao and Qing Zhou and Chuang Yang and Qi Wang},
+      year={2026},
+      eprint={2603.21783},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.21783}, 
 }
 ```
 
